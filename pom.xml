@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>montserrat-webfont</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>montserrat-webfont</name>
     <description>WebJar for montserrat-webfont</description>
     <url>http://webjars.org</url>
@@ -29,8 +29,8 @@
     <developers>
         <developer>
             <id>pedrosans</id>
-            <name></name>
-            <email></email>
+            <name />
+            <email />
         </developer>
     </developers>
 
@@ -46,7 +46,7 @@
         <url>http://github.com/webjars/montserrat-webfont</url>
         <connection>scm:git:https://github.com/webjars/montserrat-webfont.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/montserrat-webfont.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>montserrat-webfont-1.0.0</tag>
     </scm>
     
     <build>
@@ -75,13 +75,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" />
                                 </move>
                             </target>
                         </configuration>
