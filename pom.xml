@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>montserrat-webfont</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>montserrat-webfont</name>
     <description>WebJar for montserrat-webfont</description>
     <url>http://webjars.org</url>
